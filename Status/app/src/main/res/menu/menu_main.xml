@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <!-- orderInCategory values are arranged in order from left to right -->
+
+    <item android:id="@+id/profile_settings"
+        android:title="profile"
+        android:orderInCategory="1"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/group_settings"
+        android:title="group status"
+        android:orderInCategory="2"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="3"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/dimen_5dp"
+    android:layout_marginRight="@dimen/dimen_5dp"
+    android:layout_marginTop="@dimen/dimen_2dp"
+    android:layout_marginBottom="@dimen/dimen_2dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_5dp"
+        android:background="@color/light_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <com.example.laptop.status.values.RoundedImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/contactProfilePic"
+                android:src="@drawable/chicken"
+                android:layout_alignParentLeft="true"/>
+
+            <LinearLayout
+                android:id="@+id/mLinearLayout"
+                android:layout_toRightOf="@id/contactProfilePic"
+
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.laptop.status.values.RobotoTextView
+                    android:id="@+id/contactName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small Text"
+                    android:textSize="15dp"
+                    android:textColor="@color/blue"
+                    android:layout_marginLeft="10dp" />
+
+                <com.example.laptop.status.values.RobotoTextView
+                    android:id="@+id/contactPhoneNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small Text"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:textColor="#6a6a6a" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactMenuAdd"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_add_black"
+                android:theme="@style/AppTheme"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+<!--
+-->

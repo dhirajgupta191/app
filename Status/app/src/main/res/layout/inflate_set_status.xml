@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2"
+    android:layout_margin="5dp"
+    android:padding="5dp">
+
+
+        <com.example.laptop.status.values.RoundedImageView
+            android:id="@+id/profilePic"
+            android:src="@drawable/chicken"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.example.laptop.status.values.RobotoTextView
+            android:id="@+id/contactName"
+            android:text="hello"
+            android:textSize="15dp"
+            android:textColor="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.example.laptop.status.values.RobotoTextView
+            android:id="@+id/statusText"
+            android:textSize="13dp"
+            android:text="set a status: i will be there in 5 mins.."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.example.laptop.status.values.RobotoTextView
+            android:id="@+id/statusTime"
+            android:text="2 hrs"
+            android:textSize="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
